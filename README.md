@@ -336,4 +336,4 @@ Set `ENVOY_DYNAMIC_MODULES_SEARCH_PATH` to the directory containing `liblatency_
 
 ## License
 
-Apache-2.0
+MIT
