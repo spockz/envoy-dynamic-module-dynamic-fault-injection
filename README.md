@@ -1,5 +1,20 @@
 # Envoy Latency and Fault Distribution Simulation
 
+## Superseded by Built on Envoy
+
+Development of this filter now continues in Built on Envoy.
+This repository is no longer maintained and is retained for
+historical reference.
+
+- [Documentation and usage examples](https://builtonenvoy.io/extensions/dynamic-fault-injection/)
+- [Maintained source code](https://github.com/tetratelabs/built-on-envoy/tree/main/extensions/composer/dynamic-fault-injection)
+
+Please use the maintained implementation for new deployments.
+
+
+——————
+
+
 An Envoy [dynamic module](https://www.envoyproxy.io/docs/envoy/latest/intro/arch_overview/advanced/dynamic_modules) **upstream HTTP filter** written in Go that injects latency and fault responses based on configurable percentile distributions.
 
 This is similar to Envoy's built-in [fault injection filter](https://www.envoyproxy.io/docs/envoy/latest/configuration/http/http_filters/fault_filter.html) but adds support for **percentile-based latency distributions** with **per-status-code weighting** — allowing you to simulate realistic endpoint behavior including error rates, latency profiles, and load-dependent degradation.
